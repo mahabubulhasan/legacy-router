@@ -1,9 +1,9 @@
 # legacy router
 
-Laravel router has deprecated some features, like `Route::controller`, 
-and `Route::controllers`. If your code looks like something like the code below then chances are 
-they are no longer supported by the latest versions of the Laravel frameworks. To be fore precise
-this feature has been deprecated since laravel 5.2.
+Laravel router has been deprecated some features, like `Route::controller`, 
+and `Route::controllers`. If your code looks something like the code below then chances are 
+they are no longer supported by the latest versions of the Laravel. To be more precise
+these feature has been deprecated since laravel 5.2.
 
 This library brings back those legacy route features.
 
@@ -26,8 +26,7 @@ composer require uzzal/legacy-router
 ```
 
 ### configure
-In your laravel app/Http/Kernel.php add/edit your constructor like that code given below
-make sure you import the  
+In your laravel `app/Http/Kernel.php` add/edit your constructor like that code given below
 
 ```php
 <?php
@@ -55,7 +54,7 @@ class Kernel extends HttpKernel
 }
 ```
 
-In your laravel app/Console/Kernel.php add/edit your constructor like that code given below
+In your laravel `app/Console/Kernel.php` add/edit your constructor like the code given below
 make sure you import the  
 
 ```php
