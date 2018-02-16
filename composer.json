@@ -1,0 +1,23 @@
+{
+    "name": "uzzal/legacy-router",
+    "description": "Legacy router for Laravel framework 5.2+",
+    "keywords": ["laravel", "router", "legacy", "contraollers", "controller"],
+    "type": "library",
+    "license": "MIT",    
+    "authors": [
+        {
+            "name": "Mahabubul Hasan",
+            "email": "codehasan@gmail.com"
+        }
+    ],    
+    "autoload": {
+        "psr-4": {            
+            "Uzzal\\LegacyRouter\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": ">=5.2.0"
+    }
+}
