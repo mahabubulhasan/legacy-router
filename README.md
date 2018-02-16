@@ -81,3 +81,26 @@ class Kernel extends ConsoleKernel
 ```
 
 That's it. You're done!
+
+## what is this (wit)
+If you are one of those rare people who don't know how this router worked this part is for you.
+Imagine you have a controller in your `app/Http/Controllers` directory like this
+```php
+class TestController extends Controller
+{
+
+    public function getIndex(){
+        return 'this is a get request';
+    }
+
+    public function postStore(){
+        return 'this is a post request';
+    }
+}
+```
+then you can call it using the legacy router like this
+```php
+Route::controller('/test', 'TestController');
+```
+This will automatically mapped with your controller. For more on this take a look at this link
+[implicit-controllers](https://laravel.com/docs/5.0/controllers#implicit-controllers)
